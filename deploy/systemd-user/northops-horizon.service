@@ -1,0 +1,18 @@
+[Unit]
+Description=NorthOps Horizon
+After=network.target
+ConditionPathExists=/home/deployer/northops/current
+
+[Service]
+Type=simple
+WorkingDirectory=/home/deployer/northops/current
+ExecStart=/usr/bin/php artisan horizon
+Restart=always
+RestartSec=3
+TimeoutStopSec=90
+KillMode=mixed
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

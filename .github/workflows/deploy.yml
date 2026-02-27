@@ -49,9 +49,9 @@ jobs:
       - name: Add Host Key
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan -T 5 -H northops.ca >> ~/.ssh/known_hosts
+          ssh-keyscan -T 5 -H coforge.xyz >> ~/.ssh/known_hosts
           cat >> ~/.ssh/config << EOF
-          Host northops.ca
+          Host coforge.xyz
             User deployer
             StrictHostKeyChecking no
           EOF
@@ -59,9 +59,9 @@ jobs:
 
       - name: Test SSH connection
         run: |
-          ssh -v -o BatchMode=yes deployer@northops.ca "echo SSH_OK" || true
+          ssh -v -o BatchMode=yes deployer@coforge.xyz "echo SSH_OK" || true
 
       - name: Deploy
         run: |
           set -e
-          dep deploy northops.ca -v
+          dep deploy coforge.xyz -v

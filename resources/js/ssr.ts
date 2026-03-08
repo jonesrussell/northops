@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { createInertiaApp } from '@inertiajs/vue3';
 import createServer from '@inertiajs/vue3/server';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
@@ -21,5 +22,5 @@ createServer(
             setup: ({ App, props, plugin }) =>
                 createSSRApp({ render: () => h(App, props) }).use(plugin),
         }),
-    { cluster: true },
+    { cluster: true, port: Number(process.env.INERTIA_SSR_PORT || 13714) },
 );

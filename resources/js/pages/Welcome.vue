@@ -13,6 +13,7 @@ withDefaults(
 );
 
 const avatarLoaded = ref(true);
+const lucAvatarLoaded = ref(true);
 </script>
 
 <template>
@@ -354,8 +355,14 @@ const avatarLoaded = ref(true);
         <!-- About -->
         <section id="about" class="section">
             <div class="container">
-                <div class="about-inner">
-                    <div>
+                <div class="section-header">
+                    <div class="tag">About</div>
+                    <h2>The team</h2>
+                    <p>Senior engineers based in Northern Ontario. Deep experience, clean delivery.</p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-member">
                         <div class="about-avatar">
                             <img
                                 v-show="avatarLoaded"
@@ -364,39 +371,69 @@ const avatarLoaded = ref(true);
                                 @error="avatarLoaded = false"
                                 @load="avatarLoaded = true"
                             />
-                            <span v-show="!avatarLoaded" class="about-avatar-fallback">👤</span>
+                            <span v-show="!avatarLoaded" class="about-avatar-fallback">RJ</span>
+                        </div>
+                        <div class="about-content">
+                            <h3>Russell Jones</h3>
+                            <div class="team-location">Sudbury, ON</div>
+                            <p>
+                                Senior full-stack developer with deep experience in content pipelines, automation
+                                systems, and PHP/Laravel ecosystems. Built North Cloud — a production content
+                                intelligence platform that crawls, classifies, and routes news articles in real time.
+                            </p>
+                            <p>
+                                Building on the web since before frameworks were a thing. Cares deeply about code
+                                that's clean enough for the next person to understand.
+                            </p>
+                            <div class="about-stack">
+                                <span class="stack-tag">Go</span>
+                                <span class="stack-tag">Laravel</span>
+                                <span class="stack-tag">WordPress</span>
+                                <span class="stack-tag">Drupal</span>
+                                <span class="stack-tag">Vue 3</span>
+                                <span class="stack-tag">TypeScript</span>
+                                <span class="stack-tag">PostgreSQL</span>
+                                <span class="stack-tag">Redis</span>
+                                <span class="stack-tag">Docker</span>
+                                <span class="stack-tag">Linux</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="about-content">
-                        <div class="tag">About</div>
-                        <h2>Russell Jones<br />Sudbury, ON</h2>
-                        <p>
-                            I'm a senior full-stack developer with deep experience in content pipelines, automation
-                            systems, and PHP/Laravel ecosystems. I built North Cloud — a production content
-                            intelligence platform that crawls, classifies, and routes news articles in real time — and I
-                            operate it daily.
-                        </p>
-                        <p>
-                            NorthOps is how I work with clients: project-scoped, senior-level, and focused on delivery. I
-                            work with agencies that need a specialist for a project and startups that need senior
-                            engineering without the overhead of a full-time hire.
-                        </p>
-                        <p>
-                            I've been building on the web since before frameworks were a thing. These days my stack is
-                            Go, PHP (Laravel, WordPress, Drupal), and Vue 3 — and I care deeply about code that's clean
-                            enough for the next person to understand.
-                        </p>
-                        <div class="about-stack">
-                            <span class="stack-tag">Go</span>
-                            <span class="stack-tag">Laravel</span>
-                            <span class="stack-tag">WordPress</span>
-                            <span class="stack-tag">Drupal</span>
-                            <span class="stack-tag">Vue 3</span>
-                            <span class="stack-tag">TypeScript</span>
-                            <span class="stack-tag">PostgreSQL</span>
-                            <span class="stack-tag">Redis</span>
-                            <span class="stack-tag">Docker</span>
-                            <span class="stack-tag">Linux</span>
+
+                    <div class="team-member">
+                        <div class="about-avatar">
+                            <img
+                                v-show="lucAvatarLoaded"
+                                src="/images/team/luc-hebert.jpg"
+                                alt="Luc Hebert"
+                                @error="lucAvatarLoaded = false"
+                                @load="lucAvatarLoaded = true"
+                            />
+                            <span v-show="!lucAvatarLoaded" class="about-avatar-fallback">LH</span>
+                        </div>
+                        <div class="about-content">
+                            <h3>Luc Hebert</h3>
+                            <div class="team-location">Noelville, ON</div>
+                            <p>
+                                Senior full-stack software engineer with experience spanning embedded systems,
+                                LMS platforms, insurance tech, and health data systems. Most recently at Smile.io
+                                building loyalty and e-commerce solutions for 100K+ Shopify merchants.
+                            </p>
+                            <p>
+                                From mining vehicle hardware in C to React and Ruby on Rails web stacks — a
+                                versatile engineer who's led teams and shipped across wildly different domains.
+                            </p>
+                            <div class="about-stack">
+                                <span class="stack-tag">Ruby on Rails</span>
+                                <span class="stack-tag">React</span>
+                                <span class="stack-tag">PHP</span>
+                                <span class="stack-tag">JavaScript</span>
+                                <span class="stack-tag">C#</span>
+                                <span class="stack-tag">C</span>
+                                <span class="stack-tag">PostgreSQL</span>
+                                <span class="stack-tag">Redis</span>
+                                <span class="stack-tag">SQL Server</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -532,8 +569,14 @@ const avatarLoaded = ref(true);
 .northops-page :deep(.pricing-note) { margin-top: 32px; background: var(--no-gold-l); border: 1px solid #fde68a; border-radius: 10px; padding: 16px 20px; font-size: 14px; color: #92400e; line-height: 1.55; max-width: 640px; }
 .northops-page :deep(.pricing-note strong) { color: #78350f; }
 .northops-page :deep(#about) { background: var(--no-white); }
-.northops-page :deep(.about-inner) { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; align-items: center; }
-@media (max-width: 800px) { .northops-page :deep(.about-inner) { grid-template-columns: 1fr; gap: 32px; } }
+.northops-page :deep(.team-grid) { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+@media (max-width: 800px) { .northops-page :deep(.team-grid) { grid-template-columns: 1fr; gap: 48px; } }
+.northops-page :deep(.team-member) { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.northops-page :deep(.team-member .about-avatar) { width: 180px; height: 180px; max-width: 180px; margin-bottom: 24px; }
+.northops-page :deep(.team-member .about-content h3) { font-size: 24px; font-weight: 800; color: var(--no-navy); margin-bottom: 4px; }
+.northops-page :deep(.team-location) { font-size: 14px; color: var(--no-gray); margin-bottom: 16px; }
+.northops-page :deep(.team-member .about-content p) { text-align: left; }
+.northops-page :deep(.team-member .about-stack) { justify-content: center; }
 .northops-page :deep(.about-avatar) { width: 100%; aspect-ratio: 1; max-width: 280px; border-radius: 20px; background: linear-gradient(135deg, var(--no-navy), var(--no-blue)); display: flex; align-items: center; justify-content: center; font-size: 80px; overflow: hidden; }
 .northops-page :deep(.about-avatar img) { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
 .northops-page :deep(.about-avatar-fallback) { font-size: 80px; line-height: 1; }

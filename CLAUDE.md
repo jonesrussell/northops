@@ -39,7 +39,7 @@ npm run build:ssr          # Vite production build with SSR
 
 ### Deployment
 ```bash
-php artisan deploy         # Deploy via Deployer to coforge.xyz
+php artisan deploy         # Deploy via Deployer to northops.ca
 ```
 
 ## Architecture

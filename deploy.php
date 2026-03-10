@@ -22,7 +22,7 @@ add('writable_dirs', [
 
 // Hosts
 
-host('coforge.xyz')
+host('northops.ca')
     ->set('remote_user', 'deployer')
     ->set('deploy_path', '~/northops');
 

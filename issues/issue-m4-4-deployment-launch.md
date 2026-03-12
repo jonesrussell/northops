@@ -59,6 +59,10 @@ This milestone completes the deployment pipeline, hosting configuration, and pre
 - M4-2: Page assembly
 - M4-3: Styling, routing polish, and CTA wiring
 
+## Note on CI/CD
+
+The repo is already configured so that a push to `main` triggers a deploy. The M4-4 deployment plan describes the architecture and hosting configuration, not the CI trigger.
+
 ## Instructions
 
 Review and approve before launch.

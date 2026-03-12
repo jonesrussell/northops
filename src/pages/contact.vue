@@ -5,12 +5,12 @@
  * Template: Contact Page Template (M3-2)
  * Sections: PageIntro → ContactForm → ContactInfo → TextBlock → CTABanner
  */
-import { useMetadata } from '@/composables/useMetadata'
-import PageIntro from '@/components/PageIntro.vue'
 import ContactForm from '@/components/ContactForm.vue'
 import ContactInfo from '@/components/ContactInfo.vue'
-import TextBlock from '@/components/TextBlock.vue'
 import CTABanner from '@/components/CTABanner.vue'
+import PageIntro from '@/components/PageIntro.vue'
+import TextBlock from '@/components/TextBlock.vue'
+import { useMetadata } from '@/composables/useMetadata'
 
 useMetadata({
   title: 'Contact — NorthOps',

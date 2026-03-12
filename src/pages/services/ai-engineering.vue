@@ -5,13 +5,13 @@
  * Template: Service Detail Template (M3-2)
  * Sections: HeroSection → BulletList → MVPBlock → TagList → TextBlock → CTABanner
  */
-import { useMetadata } from '@/composables/useMetadata'
-import HeroSection from '@/components/HeroSection.vue'
 import BulletList from '@/components/BulletList.vue'
+import CTABanner from '@/components/CTABanner.vue'
+import HeroSection from '@/components/HeroSection.vue'
 import MVPBlock from '@/components/MVPBlock.vue'
 import TagList from '@/components/TagList.vue'
 import TextBlock from '@/components/TextBlock.vue'
-import CTABanner from '@/components/CTABanner.vue'
+import { useMetadata } from '@/composables/useMetadata'
 
 useMetadata({
   title: 'AI Engineering — NorthOps',

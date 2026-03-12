@@ -5,11 +5,11 @@
  * Template: About Page Template (M3-2)
  * Sections: TextBlock → TeamBios → BulletList → CTABanner
  */
-import { useMetadata } from '@/composables/useMetadata'
-import TextBlock from '@/components/TextBlock.vue'
-import TeamBios from '@/components/TeamBios.vue'
 import BulletList from '@/components/BulletList.vue'
 import CTABanner from '@/components/CTABanner.vue'
+import TeamBios from '@/components/TeamBios.vue'
+import TextBlock from '@/components/TextBlock.vue'
+import { useMetadata } from '@/composables/useMetadata'
 
 useMetadata({
   title: 'About — NorthOps',

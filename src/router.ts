@@ -7,15 +7,15 @@
  */
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Home from '@/pages/index.vue'
-import Services from '@/pages/services/index.vue'
-import WebApplicationEngineering from '@/pages/services/web-application-engineering.vue'
-import ContentDataPipelines from '@/pages/services/content-data-pipelines.vue'
-import DevopsCicd from '@/pages/services/devops-cicd.vue'
-import AiEngineering from '@/pages/services/ai-engineering.vue'
+import NotFound from '@/pages/404.vue'
 import About from '@/pages/about.vue'
 import Contact from '@/pages/contact.vue'
-import NotFound from '@/pages/404.vue'
+import Home from '@/pages/index.vue'
+import AiEngineering from '@/pages/services/ai-engineering.vue'
+import ContentDataPipelines from '@/pages/services/content-data-pipelines.vue'
+import DevopsCicd from '@/pages/services/devops-cicd.vue'
+import Services from '@/pages/services/index.vue'
+import WebApplicationEngineering from '@/pages/services/web-application-engineering.vue'
 
 const routes = [
   { path: '/', component: Home },

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import { Head, Link } from '@inertiajs/vue3';
+import { ref } from 'vue';
 import { dashboard, home, login, register } from '@/routes';
 
 withDefaults(

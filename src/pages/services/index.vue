@@ -5,10 +5,10 @@
  * Template: Services Index Template (M3-2)
  * Sections: PageIntro → ServiceGrid → CTABanner
  */
-import { useMetadata } from '@/composables/useMetadata'
+import CTABanner from '@/components/CTABanner.vue'
 import PageIntro from '@/components/PageIntro.vue'
 import ServiceGrid from '@/components/ServiceGrid.vue'
-import CTABanner from '@/components/CTABanner.vue'
+import { useMetadata } from '@/composables/useMetadata'
 
 useMetadata({
   title: 'Services — NorthOps',

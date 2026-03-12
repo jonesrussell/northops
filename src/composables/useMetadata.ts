@@ -13,7 +13,7 @@ export interface PageMetadata {
 }
 
 const TITLE_SUFFIX = ' — NorthOps'
-const DEFAULT_OG_IMAGE = '/images/og-default.png'
+const DEFAULT_OG_IMAGE = '/marketing/og-image.png'
 const BASE_URL = 'https://northops.ca'
 
 /**

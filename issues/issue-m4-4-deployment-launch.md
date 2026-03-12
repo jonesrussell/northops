@@ -42,9 +42,8 @@ This milestone completes the deployment pipeline, hosting configuration, and pre
 
 ## Next steps for founders
 
-1. **Review hosting decision** — confirm Cloudflare Pages vs. Caddy self-hosted, and choose apex vs. subdomain for admin app separation
-2. **Run QA checklist** — execute `m4-4-final-qa.md` against the production build and resolve any failures
-3. **Approve and launch** — once QA passes and hosting is configured, deploy to `northops.ca`
+1. **Run QA checklist** — execute `m4-4-final-qa.md` against the production build and resolve any failures
+2. **Approve and merge** — push to `main` triggers deploy to northops.ca. No additional hosting decision required.
 
 ## Related PRs
 
@@ -59,10 +58,10 @@ This milestone completes the deployment pipeline, hosting configuration, and pre
 - M4-2: Page assembly
 - M4-3: Styling, routing polish, and CTA wiring
 
-## Note on CI/CD
+## Deployment
 
-The repo is already configured so that a push to `main` triggers a deploy. The M4-4 deployment plan describes the architecture and hosting configuration, not the CI trigger.
+Push to `main` triggers deploy to northops.ca. No additional hosting, CI/CD, or infrastructure decisions required at this stage. The architecture docs describe the build and quality gates, not the deploy trigger.
 
 ## Instructions
 
-Review and approve before launch.
+Review and approve before merge.

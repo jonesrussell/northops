@@ -7,5 +7,28 @@ defineProps<Props>()
 </script>
 
 <template>
-  <!-- PageIntro: short introductory text block at top of page (1-2 sentences) -->
+  <section class="page-intro section">
+    <div class="container">
+      <p class="intro-text">{{ text }}</p>
+    </div>
+  </section>
 </template>
+
+<style scoped>
+.page-intro {
+  padding-bottom: var(--space-8);
+}
+
+.intro-text {
+  font-size: var(--font-xl);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+  max-width: 55ch;
+}
+
+@media (min-width: 768px) {
+  .intro-text {
+    font-size: var(--font-2xl);
+  }
+}
+</style>

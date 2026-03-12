@@ -1,0 +1,109 @@
+/**
+ * Layout — NorthOps
+ *
+ * Container, grid, section spacing, responsive rules.
+ * M2-2: "generous whitespace", "content-first layout", "one idea per section"
+ */
+
+/* ── Container ── */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.container-narrow {
+  max-width: var(--container-narrow);
+}
+
+/* ── Section spacing ──
+   M2-2: "spacing between sections should be larger than spacing within sections" */
+
+.section {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+
+.section + .section {
+  padding-top: 0;
+}
+
+/* Alternating background for section breaks — M2-2 approved */
+.section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+/* ── Grid ──
+   M2-2: "single-column for long-form, two or three columns for cards" */
+
+.grid {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+}
+
+.grid-3 {
+  grid-template-columns: 1fr;
+}
+
+.grid-4 {
+  grid-template-columns: 1fr;
+}
+
+/* ── Responsive ── */
+
+/* sm: 640px */
+@media (min-width: 640px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* md: 768px */
+@media (min-width: 768px) {
+  .section {
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
+  }
+
+  h1 {
+    font-size: var(--font-5xl);
+  }
+}
+
+/* lg: 1024px */
+@media (min-width: 1024px) {
+  :root {
+    --container-padding: var(--space-8);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* xl: 1280px */
+@media (min-width: 1280px) {
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

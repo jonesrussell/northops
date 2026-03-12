@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ProofPoints from './ProofPoints.vue'
+
 interface ProofPoint {
   title: string
   description: string
@@ -12,5 +14,5 @@ defineProps<Props>()
 </script>
 
 <template>
-  <!-- WhyNorthOps: reusable section composing ProofPoints with canonical 5 differentiators -->
+  <ProofPoints :items="items" />
 </template>

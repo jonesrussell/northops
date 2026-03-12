@@ -5,16 +5,13 @@
  * Template: Home Page Template (M3-2)
  * Sections: HeroSection → ServiceGrid → WhyNorthOps → ProcessSteps → TeamSection → CTABanner
  */
-import { useContent } from '@/composables/useContent'
-import { useMetadata } from '@/composables/useMetadata'
-import HeroSection from '@/components/HeroSection.vue'
-import ServiceGrid from '@/components/ServiceGrid.vue'
-import WhyNorthOps from '@/components/WhyNorthOps.vue'
-import ProcessSteps from '@/components/ProcessSteps.vue'
-import TeamSection from '@/components/TeamSection.vue'
 import CTABanner from '@/components/CTABanner.vue'
-
-const content = useContent('home')
+import HeroSection from '@/components/HeroSection.vue'
+import ProcessSteps from '@/components/ProcessSteps.vue'
+import ServiceGrid from '@/components/ServiceGrid.vue'
+import TeamSection from '@/components/TeamSection.vue'
+import WhyNorthOps from '@/components/WhyNorthOps.vue'
+import { useMetadata } from '@/composables/useMetadata'
 
 useMetadata({
   title: 'NorthOps — Senior Engineering. Shipped in Days.',

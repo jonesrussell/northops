@@ -35,13 +35,13 @@ NorthOps is senior-only because the work demands it. Architecture decisions, pro
         {
           name: 'Russell Jones',
           title: 'Senior Engineer & Co-Founder',
-          photo: '/images/team/russell.jpg',
+          photo: 'https://avatars.githubusercontent.com/u/499552?v=4',
           bio: 'Russell is a senior software engineer and solutions architect with deep experience across PHP, Laravel, Drupal, Go, Rust, and platform infrastructure. He has worked as Principal Solutions Architect at Web Networks, where he builds and governs community platforms, leads technical architecture, and shapes narrative for projects including Minoo, North Cloud, and Waaseyaa. His work spans marketing, mining, real estate, and SaaS — always focused on the architecture and pipelines that make content and data flow reliably.\n\nRussell\'s engineering focus is backend systems, content pipelines, CMS architecture, and deploy automation. He builds the infrastructure that content-driven products depend on: ingestion, transformation, publishing, CI/CD, and server provisioning. He has worked across northern and southern Ontario, London (UK), and Elko (Nevada), bringing a grounded perspective shaped by real operational environments — not theoretical frameworks.\n\nRussell is known for explicit, actionable, community-grounded communication. He rejects abstract and performative language in favour of direct, technical clarity. He brings a strong focus on Indigenous data sovereignty and AI alignment — ensuring that the systems he builds respect the communities they serve. At NorthOps, Russell leads Web Application Engineering, Content & Data Pipelines, and DevOps & CI/CD delivery.',
         },
         {
           name: 'Luc Hebert',
           title: 'Senior Engineer & Co-Founder',
-          photo: '/images/team/luc.jpg',
+          photo: '/images/team/luc-hebert.jpg',
           bio: 'Luc is a senior engineer specializing in TypeScript, React, Ruby on Rails, Python, DevOps, and AI integration. He brings deep experience building frontend applications, TypeScript APIs, and production-grade AI features including LLM workflows, embeddings, RAG pipelines, and agent automation.\n\nHis engineering focus is the interface layer and the intelligence layer: the applications people use and the AI capabilities that make those applications smarter. At NorthOps, Luc leads AI Engineering delivery and co-leads Web Application Engineering and DevOps & CI/CD alongside Russell.',
         },
       ]"

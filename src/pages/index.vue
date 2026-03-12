@@ -60,8 +60,8 @@ useMetadata({
 
     <TeamSection
       :members="[
-        { name: 'Russell Jones', title: 'Senior Engineer & Co-Founder', photo: '/images/team/russell.jpg', bio: 'Backend systems, content pipelines, and deploy automation across Laravel, Drupal, Go, and Rust.' },
-        { name: 'Luc Hebert', title: 'Senior Engineer & Co-Founder', photo: '/images/team/luc.jpg', bio: 'Frontend applications, TypeScript APIs, and AI integrations across React, Rails, and Python.' },
+        { name: 'Russell Jones', title: 'Senior Engineer & Co-Founder', photo: 'https://avatars.githubusercontent.com/u/499552?v=4', bio: 'Backend systems, content pipelines, and deploy automation across Laravel, Drupal, Go, and Rust.' },
+        { name: 'Luc Hebert', title: 'Senior Engineer & Co-Founder', photo: '/images/team/luc-hebert.jpg', bio: 'Frontend applications, TypeScript APIs, and AI integrations across React, Rails, and Python.' },
       ]"
     />
 
